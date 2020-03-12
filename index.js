@@ -1,17 +1,17 @@
-var x = []
+let x = []
 
 function dwarfRollCall(dwarves) {
-for (var i = 0; i < dwarves.length;  i++) {
+for (let i = 0; i < dwarves.length;  i++) {
  x += `${[i + 1]}` + '. ' + `${dwarves[i]}` + ' '
 }
  return x;
 }
 
-  var array = []
+  let array = []
 
 
 function summonCaptainPlanet(planeteerCalls) {
-  for (var i=0;i<planeteerCalls.length;i++) {
+  for (let i=0;i<planeteerCalls.length;i++) {
   array.push(`${planeteerCalls[i].toUpperCase()}!`)
 }
 return array
@@ -23,7 +23,7 @@ return array
 function longPlaneteerCalls(elements){
 
 
- for (var i = 0; i < elements.length;  i++){
+ for (let i = 0; i < elements.length;  i++){
   if (elements[i].length > 4){
   return true;
   }
@@ -32,13 +32,13 @@ function longPlaneteerCalls(elements){
 }
 
 
-var x = []
+let x = []
 
 function findTheCheese(groceries){
 var typesOfCheese = ['cheddar', 'gouda', 'camembert']
 
-for (var i = 0; i < typesOfCheese.length;  i++){
-for (var j = 0; j < groceries.length; j++){
+for (let i = 0; i < typesOfCheese.length;  i++){
+for (let j = 0; j < groceries.length; j++){
   if (typesOfCheese[i] == groceries[j]){
     return typesOfCheese[i]
   }
